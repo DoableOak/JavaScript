@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Problemas Secuenciales</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<script src="js/validar.js"></script>
+	<header class="header">
+		
+	</header>
+
+	<hr class="hr">
+
+	<section class="Problema_1">
+		<h1>Ejercicio 1</h1>
+		<form name="Formulario" method="post">
+			<table border="1" id="tabla">
+				<tr>
+				<th>
+					Capital
+				</th>
+				<th>
+					Monto
+				</th>
+				</tr>
+				<tr>
+					<td>Introduce la cantidad a invertir : $</td>
+					<td><input type="text" name="cantidad" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="enviar" value="Calcular el interes" onclick="interes()"></td>
+					<td></td>
+				</tr>
+				<tr>					
+				</tr>
+				<tr>
+					<td>Su intteres del 2% mensual es de : </td>
+					<td><input type="text" id="interesi" class ="input_text" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>
+						Su inversion total es de:
+					</td>
+					<td><input type="text" name="sueldo" id="sueldoi" class="inpuy_text" readonly="readonly"></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+
+	<hr class="hr">
+
+	<section class="Problema_2">
+		<h1 id="segundop">Ejercicio 2</h1>
+		<form name="Formulario2" method="post">
+			<table border="1" id="tabla2">
+				<tr>
+				<th>
+					Sueldo			
+				</th>
+				<th>
+					Total
+				</th>
+				</tr>
+				<tr>
+					<td>Introduce tu sueldo base : $</td>
+					<td><input type="text" name="sueldob" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td>Introduce la primera venta</td>
+					<td><input type="text" name="ven1" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td>Introduce la segunda venta</td>
+					<td><input type="text" name="ven2" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td>Introduce la tercera venta</td>
+					<td><input type="text" name="ven3" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td>Introduce la cuarta venta</td>
+					<td><input type="text" name="ven4" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td>Introduce la quinta venta</td>
+					<td><input type="text" name="ven5" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="enviar" value="Calcular su sueldo" onclick="comision(event)"> </td>
+					<td></td>
+				</tr>
+				<tr>					
+				</tr>
+				<tr>
+					<td>Cantidad extra por comisiones</td>
+					<td><input type="text" id="comiss" class ="input_text" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Su sueldo total es:</td>
+					<td><input type="text" name="sueldoto" id="sueldoto" class="inpuy_text" readonly="readonly"></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+
+	<hr class="hr">
+
+	<section class="Problema_3">
+		<h1 id="tercerop">Ejercicio 3</h1>
+		<form name="Formulario3" method="post">
+			<table border="1" id="tabla3">
+				<tr>
+					<th>Compra</th>
+					<th>A pagar</th>
+				</tr>
+				<tr>
+					<td>Ingresa de cuanto fue la compra: $</td>
+					<td><input type="text" name="compra" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="enviar" value="Calcular el total de su compra" onclick="venta(event)"></td>
+					<td></td>
+				</tr>
+				<tr>					
+				</tr>
+				<tr>
+					<td>Con 7% de descuento, pagará</td>
+					<td><input type="text" name="precompra" id="precompra" class="inpuy_text" readonly="readonly"></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+	
+	<hr class="hr">
+
+	<section class="Problema_4">
+		<h1 id="cuartop">Ejercicio 4</h1>
+		<form name="Formulario4" method="post">
+			<table border="1" id="tabla4">
+				<tr>
+					<th>Calificaciones</th>
+					<th>Calificacion final</th>
+				</tr>
+				<tr>
+					<td>Calificacion del primer parcial: </td>
+					<td><input type="text" name="parcial1" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td>Calificacion del segundo parcial: </td>
+					<td><input type="text" name="parcial2" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td>Calificacion del tecer parcial: </td>
+					<td><input type="text" name="parcial3" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td>Calificacion del examen: </td>
+					<td><input type="text" name="examen" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td>Calificacion del trabajo final: </td>
+					<td><input type="text" name="trabajo_final" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="enviar" value="Calcular tu promedio" onclick="calif(event)"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Calificacion final: </td>
+					<td><input type="text" name="promedio" id="promedio" class="inpuy_text" readonly="readonly"></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+
+	<hr class="hr">
+
+	<section class="Problema_5">
+		<h1>Ejercicio 5</h1>
+		<form name="Formulario5" method="post">
+			<table border="1" id="tabla5">
+				<tr>
+					<th>Cantidad</th>
+					<th>Porcentajes</th>
+				</tr>
+				<tr>
+					<td>Cuantos hombres son: </td>
+					<td><input type="text" name="hombres" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td>Cuantas mujeres son: </td>
+					<td><input type="text" name="mujeres" onkeypress="return validarn(event)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="enviar" value="Calcular los porcentajes" onclick="porcentaje(event)"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Porcentaje de hombres: </td>
+					<td><input type="text" name="hompor" id="promedio" class="inpuy_text" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Porcentaje de mujeres: </td>
+					<td><input type="text" name="mujpor" id="promedio" class="inpuy_text" readonly="readonly"></td>
+				</tr>
+			</table>
+		</form>
+	</section>	
+</body>
+</html>
